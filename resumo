@@ -1,0 +1,2 @@
+tsc --init = inicia o tsc config json
+tsc -w = atualiza automaticamente o ts
