@@ -73,3 +73,4 @@ function pessoa(pessoa:Pessoa){
 
 const objetoPessoa:Pessoa = {nome:'jonathan', sobrenome:'nogueira'} 
 pessoa(objetoPessoa)
+
