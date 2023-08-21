@@ -59,3 +59,17 @@ function unionType(salario: number | string){
 }
 unionType(500)
 unionType('500')
+
+
+// 41 - USANDO INTERFACE PARA SIMPLIFICAR OBJETOS
+interface Pessoa{
+    nome:string,
+    sobrenome:string
+}
+
+function pessoa(pessoa:Pessoa){
+    console.log(`essa é a pessoa ${pessoa.nome} + ${pessoa.sobrenome}`)
+}
+
+const objetoPessoa:Pessoa = {nome:'jonathan', sobrenome:'nogueira'} 
+pessoa(objetoPessoa)
