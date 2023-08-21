@@ -44,10 +44,18 @@ const objeto:{nome:string, idade:number, sobrenome?:string} = {nome:'jonathan', 
 function mostra(nome:string, sobrenome:string, idade?:number){
     console.log(nome)   
     console.log(sobrenome)   
-    if(idade){
+    if(idade !== undefined){
         console.log(idade)   
     }
 }
 
 mostra('jonathan', 'nogueira')
 mostra('jonathan', 'nogueira', 20)
+
+// 38 - UNION TYPE - pode ser um ou outro
+
+function unionType(salario: number | string){
+    console.log(`seu salário é ${salario}`)
+}
+unionType(500)
+unionType('500')
