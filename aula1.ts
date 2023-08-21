@@ -34,5 +34,20 @@ function objetoTipo(coord: {numero:number, nome:string}){
     console.log(coord.numero + '' + coord.nome)
 }
 
-const coord = {numero: 224, nome: 'jonathan'}
+/* como declarar objeto */
+const coord:{numero:number, nome:string} = {numero: 224, nome: 'jonathan'}
 objetoTipo(coord)
+
+// 36 - declarar objeto opcional COM SINAL ? 
+const objeto:{nome:string, idade:number, sobrenome?:string} = {nome:'jonathan', idade:19}
+
+function mostra(nome:string, sobrenome:string, idade?:number){
+    console.log(nome)   
+    console.log(sobrenome)   
+    if(idade){
+        console.log(idade)   
+    }
+}
+
+mostra('jonathan', 'nogueira')
+mostra('jonathan', 'nogueira', 20)
